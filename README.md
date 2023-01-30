@@ -14,7 +14,6 @@ AR). The Overlay CMS also has a no-code interface, allowing non-technical users 
 The functionality of the screen grabber deployed via the overlay system and can be implemented using the following steps.
 
   
-
 1.  Create a new widget in the Invirtu/BingeWave [builder here](https://developers.bingewave.com/widgets). **Important**: When making the widget, **mark it as 
 published** so it will be usable when you implement it into your template.
 4.  From the src folder here, copy the app.js into the Javascript section in the widget builder.
@@ -25,7 +24,15 @@ published** so it will be usable when you implement it into your template.
 8.  Go to the Organizer account and create or update a template.
 9.  In the Interface Builder, use the Widgets section to add the widget anywhere on-screen.
 
-  
+
+## How It Works
+
+The Screen Grabber is a relatively simple utility that works as such:
+1.  In Invirtu's backend, when a user is created, a copy of their user account is synced with Invirtu's backend, and there JSON Web Token is also stored in Invirtu's 
+Backend.
+2.  The code for this app listens for when a broadcast is stopped or started. When the broadcast is started, every 60 seconds, a screengrab is executed.
+3.  The screengrab is done via HTML2Canvas, which turns the current screen into a blob.
+4.  Using the above JSON Web Token that is stored, we save the image to the backend as the event's main image.  
 
 ## Key Areas To Understand
 

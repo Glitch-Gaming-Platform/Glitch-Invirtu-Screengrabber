@@ -33,9 +33,9 @@ const captureForInvirtu = () => {
 
                     return response.json();
                 }).then(response => {
-                    console.log(response);
+                    
                 }).catch(error => {
-                    console.log(error);
+                    console.error(error);
                 });
 
             });
@@ -60,10 +60,6 @@ const captureForGlitch = () => {
                     const formData = new FormData();
                   	
                     formData.append('image', blob, 'pic123.png');
-
-                   console.log( {
-                            'Authorization': 'Bearer ' + BWProperties.user.account.secure_preferences.glitch_auth_token,
-                        });
                   
                     fetch(url, {
                         method: 'POST',
@@ -82,9 +78,9 @@ const captureForGlitch = () => {
 
                         return response.json();
                     }).then(response => {
-                        console.log(response);
+       
                     }).catch(error => {
-                        console.log(error);
+                        console.error(error);
                     });
                 }
 
