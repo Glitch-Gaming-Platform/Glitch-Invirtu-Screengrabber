@@ -34,4 +34,5 @@ The Screen Grabber is comprised of several tools for the functionality to work. 
 -   [Invirtu Event System (Subscribing and Publishing)](https://developers.bingewave.com/javascript/bwevents)
 -   [Invirtu API](https://developers.bingewave.com/javascript/bwapi)
 -   [Invirtu Design Layout](https://developers.bingewave.com/javascript/css)
+-   [Invirtu User Properties](https://developers.bingewave.com/javascript/bwproperties)
 -   [HTML2Canvas](https://html2canvas.hertzen.com/)
